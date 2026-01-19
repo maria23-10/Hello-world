@@ -1,4 +1,8 @@
-body blockquote.q {
+@font-face {
+font-family:"Pudelinka";
+src:url("Fonts/pudelinka.ttf") format (
+
+body blockquote.q { 
 	color: #D4AF37;
 	border-left: 4px solid #8B0000;
 	font-style: italic;
