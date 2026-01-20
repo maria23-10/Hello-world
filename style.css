@@ -1,5 +1,5 @@
 body{
-	background-color: #d2b48c;
+	background-color: #ffe6f0;
 	margin-left: 20%;
 	margin-right: 20%;
 	border: 2px dotted black;
@@ -7,7 +7,7 @@ body{
 	font-family: sans serif;
     }
 blockquote.q {
-	color: #D4AF37;
+	color: #333;
 	border-left: 4px solid #8B0000;
 	font-style: italic;
 }
