@@ -1,0 +1,245 @@
+/* ===== Сброс и базовые настройки ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #4361ee;
+    --primary-dark: #3a56d4;
+    --secondary: #7209b7;
+    --bg: #f8f9fc;
+    --card-bg: #ffffff;
+    --text: #2b2d42;
+    --text-light: #6c757d;
+    --border: #e9ecef;
+    --success: #2ecc71;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+    --radius: 12px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Шапка ===== */
+.header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* ===== Посты блога ===== */
+.blog-post {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-post:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.blog-post time {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    background: var(--bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.blog-post h2, .blog-post h3 {
+    margin: 0.5rem 0 1rem;
+    color: var(--primary-dark);
+}
+
+/* ===== Ссылки и файлы ===== */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.file-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg);
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.file-link:hover {
+    background: var(--border);
+    text-decoration: none;
+}
+
+.external-link::after {
+    content: "↗";
+    font-size: 0.8em;
+    margin-left: 2px;
+}
+
+/* ===== Код и формулы ===== */
+.code-block {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+code {
+    background: var(--bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+}
+
+/* ===== Метрики и результаты ===== */
+.metrics, .highlight {
+    background: var(--bg);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+.success {
+    color: var(--success);
+    font-weight: 600;
+}
+
+.score {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* ===== Графики результатов ===== */
+.results-list {
+    list-style: none;
+}
+
+.results-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.bar {
+    height: 8px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 4px;
+    min-width: 20px;
+}
+
+/* ===== Цитаты ===== */
+.quote {
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: var(--text-light);
+}
+
+/* ===== Медиа ===== */
+.media, .media-img {
+    max-width: 100%;
+    border-radius: var(--radius);
+    margin: 1rem 0;
+    display: block;
+}
+
+/* ===== Детали (раскрывающиеся списки) ===== */
+details {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--border);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+/* ===== Подвал ===== */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .blog-post {
+        padding: 1.25rem;
+    }
+}
+
+/* ===== Анимация появления ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.blog-post {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.blog-post:nth-child(2) { animation-delay: 0.05s; }
+.blog-post:nth-child(3) { animation-delay: 0.1s; }
+.blog-post:nth-child(4) { animation-delay: 0.15s; }
+/* и так далее... */
