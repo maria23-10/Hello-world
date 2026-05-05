@@ -1,245 +1,170 @@
-/* ===== Сброс и базовые настройки ===== */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог | Мария</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение современных шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <h1>📚 Мой блог</h1>
+            <p class="subtitle">Заметки, проекты и открытия</p>
+        </div>
+    </header>
 
-:root {
-    --primary: #4361ee;
-    --primary-dark: #3a56d4;
-    --secondary: #7209b7;
-    --bg: #f8f9fc;
-    --card-bg: #ffffff;
-    --text: #2b2d42;
-    --text-light: #6c757d;
-    --border: #e9ecef;
-    --success: #2ecc71;
-    --shadow: 0 4px 20px rgba(0,0,0,0.08);
-    --radius: 12px;
-}
+    <!-- Основной контент -->
+    <main class="container">
+        <article class="blog-post">
+            <time datetime="2026-05-05">5 мая, 2026</time>
+            <h2>Новые материалы</h2>
+            <div class="attachments">
+                <a href="таблица3.ods" class="file-link">📊 Таблица 3</a>
+            </div>
+        </article>
 
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
-}
+        <article class="blog-post">
+            <time datetime="2026-04-27">27 апреля, 2026</time>
+            <a href="Без имени 2.ods" class="file-link">📈 Таблица 2</a>
+        </article>
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        <article class="blog-post">
+            <time datetime="2026-04-22">22 апреля, 2026</time>
+            <a href="диаграмма.ods" class="file-link">📉 Диаграмма</a>
+        </article>
 
-/* ===== Шапка ===== */
-.header {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-    margin-bottom: 2rem;
-}
+        <article class="blog-post">
+            <time datetime="2026-04-08">8 апреля, 2026</time>
+            <a href="pac.png" class="file-link image-preview">🗄️ Проект: База данных</a>
+        </article>
 
-.header h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
+        <article class="blog-post">
+            <time datetime="2026-04-01">1 апреля, 2026</time>
+            <h3>Итоговые результаты (с новым признаком)</h3>
+            <div class="metrics">
+                <p><strong>Ошибка на обучении (MSE):</strong> <code>2.219</code></p>
+                <p><strong>Ошибка на тесте (MSE):</strong> <code>2.162</code></p>
+            </div>
+        </article>
 
-.subtitle {
-    opacity: 0.9;
-    font-weight: 300;
-}
+        <article class="blog-post">
+            <time datetime="2026-03-21">21 марта, 2026</time>
+            <p>📊 Загрузила датасет. Показатель точности: <strong>69%</strong></p>
+            <p>Сгенерировала датасет на основе: возраст, стаж вождения, число ДТП — для решения о страховании КАСКО.</p>
+            <div class="highlight">
+                <p><strong>Тест клиента:</strong> возраст=25; стаж=5; ДТП=0</p>
+                <p><strong>Точность решения:</strong> <span class="success">85,50%</span> ✅</p>
+            </div>
+        </article>
 
-/* ===== Посты блога ===== */
-.blog-post {
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: var(--shadow);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+        <article class="blog-post">
+            <time datetime="2026-03-16">16 марта, 2026</time>
+            <p>🎓 Студент занимался 5 часов</p>
+            <p><strong>Прогноз баллов:</strong> <span class="score">76.40</span></p>
+        </article>
 
-.blog-post:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-}
+        <article class="blog-post">
+            <time datetime="2026-02-25">25 февраля, 2026</time>
+            <div class="faq-bot">
+                <p>🤖 <strong>Бот-FAQ:</strong> Наш стандартный срок доставки — 3–5 рабочих дней.</p>
+                <p>🤖 <strong>Бот-FAQ:</strong> Заказ можно оплатить по карте.</p>
+            </div>
+        </article>
 
-.blog-post time {
-    display: inline-block;
-    font-size: 0.875rem;
-    color: var(--text-light);
-    background: var(--bg);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    margin-bottom: 1rem;
-}
+        <article class="blog-post">
+            <time datetime="2026-02-18">18 февраля, 2026</time>
+            <h3>🐱 Распознавание пород кошек</h3>
+            <ul class="results-list">
+                <li><span class="bar" style="width: 43.18%"></span> Persian cat: <strong>43.18%</strong></li>
+                <li><span class="bar" style="width: 21.81%"></span> tabby cat: <strong>21.81%</strong></li>
+                <li><span class="bar" style="width: 13.68%"></span> Egyptian Mau: <strong>13.68%</strong></li>
+            </ul>
+        </article>
 
-.blog-post h2, .blog-post h3 {
-    margin: 0.5rem 0 1rem;
-    color: var(--primary-dark);
-}
+        <article class="blog-post">
+            <time datetime="2026-01-20">20 января, 2026</time>
+            <h3>🔐 Криптография: Пример RSA</h3>
+            <pre class="code-block"><code>n = p·q = 5·7 = 35
+φ(n) = (p−1)(q−1) = 4·6 = 24
+gcd(5,24) = 1 → ✅ подходит!
+5·d ≡ 1 (mod 24) → d = 5
+Открытый ключ: (e,n) = (5,35)
+Закрытый ключ: (d,n) = (5,35)</code></pre>
+        </article>
 
-/* ===== Ссылки и файлы ===== */
-a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: color 0.2s;
-}
+        <article class="blog-post">
+            <time datetime="2026-01-19">19 января, 2026</time>
+            <h3>🔤 Шифры подстановки</h3>
+            <details>
+                <summary>Задание 1</summary>
+                <p>а. АПЕЛЬСИН → САЦЬНВЩЮ, k=17<br>
+                б. АБРИКОС → ЫЬЛГЕЙМ, k=27</p>
+            </details>
+            <details>
+                <summary>Задание 2</summary>
+                <p>а. ФХНЧКЗ → ПРИВЕТ, k=5<br>
+                б. ЦЩЕБФ → ВЕСНА, k=20</p>
+            </details>
+            <details>
+                <summary>Задание 3</summary>
+                <p>БЫЧКОВА → КЕБФШЛЙ</p>
+            </details>
+            <blockquote class="quote">«Путешествие в тысячу миль начинается с одного шага» — Лао Цзы</blockquote>
+        </article>
 
-a:hover {
-    color: var(--primary-dark);
-    text-decoration: underline;
-}
+        <article class="blog-post">
+            <time datetime="2025-01-14">14 января, 2025</time>
+            <p>📧 <a href="mailto:mari.bychkova.10@internet.ru" class="email-link">Напишите мне</a></p>
+            <p>🌐 Домен: <code>maria23-10.github.io</code></p>
+        </article>
 
-.file-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg);
-    border-radius: 8px;
-    font-weight: 500;
-}
+        <article class="blog-post">
+            <time datetime="2025-12-20">20 декабря, 2025</time>
+            <p>🎄 Поздравление с Рождеством: 
+                <a href="kolyadka2.odt" class="file-link">Скачать</a>
+            </p>
+            <video class="media" width="100%" height="auto" controls poster="thumb.jpg">
+                <source src="newTree.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </article>
 
-.file-link:hover {
-    background: var(--border);
-    text-decoration: none;
-}
+        <article class="blog-post">
+            <time datetime="2025-12-01">1 декабря, 2025</time>
+            <img src="IconIcons/gingerbread-man.png" alt="Новогодний пряничный человечек" class="media-img">
+            <p>🎅 Поздравление с Новым 2026 годом: 
+                <a href="Congratulations2026.html">Читать здесь</a>
+            </p>
+        </article>
 
-.external-link::after {
-    content: "↗";
-    font-size: 0.8em;
-    margin-left: 2px;
-}
+        <article class="blog-post">
+            <time datetime="2025-10-15">15 октября, 2025</time>
+            <p>✨ Создала новогодние кроссворды для сайта:<br>
+            <a href="http://evelina09-16.github.io/dem.gihub.io/" class="external-link" target="_blank">
+                🌟 Сайт моего друга
+            </a></p>
+        </article>
 
-/* ===== Код и формулы ===== */
-.code-block {
-    background: #1e1e2e;
-    color: #cdd6f4;
-    padding: 1rem;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.9rem;
-}
+        <article class="blog-post">
+            <time datetime="2025-09-01">1 сентября, 2025</time>
+            <blockquote class="quote">«Путешествие в тысячу миль начинается с одного шага» — Лао Цзы</blockquote>
+            <p>🚀 Оставляю в прошлом скучную локальную файловую систему ради Всемирной паутины.</p>
+            <p class="small"><a href="https://www.flaticon.com/ru/free-icons/" target="_blank">Иконки от Flaticon</a></p>
+        </article>
+    </main>
 
-code {
-    background: var(--bg);
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-family: monospace;
-    font-size: 0.95em;
-}
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025–2026 Мария Бычкова. Все права защищены.</p>
+            <p>Создано с ❤️ и кодом</p>
+        </div>
+    </footer>
 
-/* ===== Метрики и результаты ===== */
-.metrics, .highlight {
-    background: var(--bg);
-    padding: 1rem;
-    border-radius: 8px;
-    margin: 0.5rem 0;
-}
-
-.success {
-    color: var(--success);
-    font-weight: 600;
-}
-
-.score {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary);
-}
-
-/* ===== Графики результатов ===== */
-.results-list {
-    list-style: none;
-}
-
-.results-list li {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.5rem 0;
-}
-
-.bar {
-    height: 8px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    border-radius: 4px;
-    min-width: 20px;
-}
-
-/* ===== Цитаты ===== */
-.quote {
-    border-left: 4px solid var(--primary);
-    padding-left: 1rem;
-    margin: 1rem 0;
-    font-style: italic;
-    color: var(--text-light);
-}
-
-/* ===== Медиа ===== */
-.media, .media-img {
-    max-width: 100%;
-    border-radius: var(--radius);
-    margin: 1rem 0;
-    display: block;
-}
-
-/* ===== Детали (раскрывающиеся списки) ===== */
-details {
-    margin: 0.5rem 0;
-    padding: 0.5rem 0;
-    border-bottom: 1px dashed var(--border);
-}
-
-summary {
-    cursor: pointer;
-    font-weight: 500;
-    color: var(--primary);
-}
-
-summary:hover {
-    text-decoration: underline;
-}
-
-/* ===== Подвал ===== */
-.footer {
-    text-align: center;
-    padding: 2rem 0;
-    color: var(--text-light);
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border);
-    margin-top: 2rem;
-}
-
-/* ===== Адаптивность ===== */
-@media (max-width: 600px) {
-    .header h1 {
-        font-size: 1.5rem;
-    }
-    
-    .blog-post {
-        padding: 1.25rem;
-    }
-}
-
-/* ===== Анимация появления ===== */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.blog-post {
-    animation: fadeIn 0.3s ease-out forwards;
-}
-
-.blog-post:nth-child(2) { animation-delay: 0.05s; }
-.blog-post:nth-child(3) { animation-delay: 0.1s; }
-.blog-post:nth-child(4) { animation-delay: 0.15s; }
-/* и так далее... */
+    <script src="script.js"></script>
+</body>
+</html>
