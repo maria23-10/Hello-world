@@ -1,19 +1,10 @@
-<|DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head> 
-<head>
-<title>Мой блог</title>
- <link type="text/css" rel="stylesheet" href="style.css" />  
-<h2> 21 мая , 2026</h2>
- <a href="таблица 4.ods">таблица4</a>
-
-
-
- 
-<h2> 12 мая , 2026</h2>
- <p><meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ответы на тест</title>
+    <title>Мой блог</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />  
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,6 +12,7 @@
             display: flex;
             justify-content: center;
             padding: 50px;
+            margin: 0;
         }
         .container {
             max-width: 600px;
@@ -29,6 +21,249 @@
         h1 {
             text-align: center;
             color: #333;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .question {
+            padding: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+        }
+        .answer {
+            padding: 20px;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            font-weight: 500;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Мой блог</h1>
+
+    <h2>21 мая, 2026</h2>
+    <p><a href="таблица 4.ods">таблица 4</a></p>
+
+    <h2>12 мая, 2026</h2>
+    <h3 style="text-align: center; color: #333;">📝 Ключи к тесту</h3>
+
+    <!-- Карточка 1 -->
+    <div class="card">
+        <div class="question">
+            <span class="badge">Типы файлов</span>
+            Тип файла указывает на:
+        </div>
+        <div class="answer">
+            ✅ Вид информации в файле – текстовый, графический, звуковой
+        </div>
+    </div>
+
+    <!-- Карточка 2 -->
+    <div class="card">
+        <div class="question">
+            <span class="badge">Безопасность</span>
+            23. Проход в колледж осуществляется с помощью:
+        </div>
+        <div class="answer">
+            ✅ Сенсорного датчика
+        </div>
+    </div>
+
+    <!-- Карточка 3 -->
+    <div class="card">
+        <div class="question">
+            <span class="badge">Hardware</span>
+            24. При выключении компьютера вся информация стирается:
+        </div>
+        <div class="answer">
+            ✅ В оперативной памяти
+        </div>
+    </div>
+
+    <h2>5 мая, 2026</h2>
+    <p><a href="таблица 3">таблица 3</a></p>
+
+    <h2>27 апреля, 2026</h2>
+    <p><a href="Без имени 2.ods">таблица 2</a></p>
+ 
+    <h2>22 апреля, 2026</h2>
+    <p><a href="диаграмма.ods">таблица</a></p>
+    
+    <h2>8 апреля, 2026</h2>
+    <p><a href="pac.png">проект база данных</a></p>
+ 
+    <h2>1 апреля, 2026</h2>
+    <p>Итоговые результаты (с новым признаком)</p>  
+    <p>Ошибка на обучении (MSE): 2.2188169496371986</p>  
+    <p>Ошибка на тесте (MSE): 2.1615495043812962</p>  
+ 
+    <h2>21 марта, 2026</h2>
+    <p>Сегодня загрузила датасет. Показатель точности равен 69%</p>  
+    <p>Сегодня я также узнала, как сгенерировать датасет на основе входных данных – возраст, стаж вождения, число ДТП – с целью принятия решения о возможности заключения страхования КАСКО</p> 
+    <p>Вот мой клиент: возраст= 25; стаж=5; ДТП=0. Точность решения составляет 85,50%</p>
+    
+    <h2>16 марта, 2026</h2>
+    <p>Студент занимался 5 часов</p>
+    <p>Прогноз баллов: 76.40</p>
+
+    <h2>25 февраля, 2026</h2>
+    <p>Ответ бот-FAQ: Наш стандартный срок доставки — 3–5 рабочих дней.</p>
+    <p>Ответ бот-FAQ: Заказ можно оплатить по карте.</p>
+
+    <h2>18 февраля, 2026</h2>
+    <p>Persian cat: 43.18%</p>
+    <p>tabby cat: 21.81%</p>
+    <p>Egyptian Mau: 13.68%</p>
+
+    <h2>20 января, 2026</h2>
+    <p class="quote">n = p⋅q = 5⋅7 = 35</p>
+    <p>ϕ(n) = (p−1)(q−1) = (5−1)(7−1) = 4⋅6 = 24</p>
+    <p>gcd(5,24) = 1 → ✅ подходит!</p>
+    <p>e⋅d ≡ 1 (mod ϕ(n)) ⇒ 5d ≡ 1 (mod 24)</p>
+    <p>5⋅5 = 25 ≡ 1 mod 24 ✅</p>
+    <p>Открытый ключ: (e,n) = (5,35)</p>
+    <p>Закрытый ключ: (d,n) = (5,35)</p>
+    <p>Реальное значение n: 18934572093847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293......Thinking Process:
+
+1.  **Analyze the user's input**: The user provided an HTML snippet and asked why the latest dates are not loading on their website ("на моем сайте не прогружаются последние даты,что изменить в коде").
+2.  **Examine the HTML code**:
+    *   Line 1-7:
+        ```html
+        <!DOCTYPE html>
+        <html>
+        <head> 
+        <head> <!-- ERROR: Duplicate <head> -->
+        <title>Мой блог</title>
+         <link type="text/css" rel="stylesheet" href="style.css" />  
+        <h2> 21 мая , 2026</h2> <!-- ERROR: Content inside <head> -->
+         <a href="таблица 4.ods">таблица4</a>  
+        ```
+    *   Line 9-59:
+        ```html
+        <h2> 12 мая , 2026</h2>
+         <p><meta charset="UTF-8"> <!-- ERROR: meta inside p -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ответы на тест</title> <!-- ERROR: title inside body -->
+            <style> ... </style> <!-- ERROR: style block nested weirdly -->
+        </head> <!-- ERROR: Closing head here? -->
+        <body> <!-- ERROR: Second body tag -->
+        ...
+          </head> <!-- ERROR: Another closing head -->
+          <body> <!-- ERROR: Another opening body -->
+        ```
+    *   Line 86: `<p> Задание 3</p` (Missing `>`).
+
+3.  **Identify the root cause**: The HTML structure is severely broken. There are multiple `<head>` and `<body>` tags. An entire HTML document (starting with `<meta charset="UTF-8">`) was copy-pasted *inside* the middle of the existing blog post. Browsers try to auto-correct malformed HTML, which often results in the parser getting confused, closing tags prematurely, or hiding content (especially when `<head>` and `<body>` are interleaved or duplicated). This is exactly why the "latest dates" (which are at the top, near the malformed `<head>` section) are not rendering correctly.
+
+4.  **Formulate the solution**:
+    *   Explain the errors clearly: duplicate `<head>`/`<body>`, misplaced `<meta>` and `<style>` tags, and content inside the `<head>`.
+    *   Provide the fully corrected, clean HTML code.
+    *   Key fixes to apply:
+        *   Keep only ONE `<head>` and ONE `<body>`.
+        *   Move `<meta charset>`, `<meta viewport>`, `<title>`, and `<style>` to the proper `<head>` section.
+        *   Ensure all blog posts (the `<h2>`, `<p>`, `<a>`, and `.card` divs) are strictly inside the `<body>`.
+        *   Fix the unclosed `<p>` tag (`<p> Задание 3</p>`).
+        *   Wrap the content nicely so the CSS provided by the user (which targets `.container`, `.card`, etc.) actually works. I'll add a `<div class="container">` around the main content to make the user's CSS effective.
+
+5.  **Refine the corrected code**:
+    *   Combine the styles from the nested part into the main `<head>`.
+    *   Structure:
+        ```html
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Мой блог</title>
+            <link type="text/css" rel="stylesheet" href="style.css" />
+            <style>
+                /* user's styles here */
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <!-- All blog posts here -->
+            </div>
+        </body>
+        </html>
+        ```
+
+6.  **Double-check user constraints**:
+    *   Current date: Tuesday, June 02, 2026 (contextual, doesn't change HTML fix).
+    *   Language: Russian.
+    *   Tone: Helpful, direct, educational.
+
+7.  **Final Output Generation**: Present the explanation of errors first, then the ready-to-use corrected code. Highlight what was changed so the user learns from it. Ensure the Russian is natural and accurate. Fix the typo "Сегедня" -> "Сегодня" (optional but nice). Fix the missing `>` in `</p>`. Ensure all links and text from the original are preserved.
+</think>
+
+Причина, по которой последние даты (и часть содержимого) не отображаются или страница работает некорректно, заключается в **грубых ошибках структуры HTML-кода**. 
+
+Браузеры читают код сверху вниз. Когда они встречают серьезные нарушения структуры, их встроенный механизм исправления ошибок начинает "ломать" или скрывать часть контента, чтобы предотвратить полный крах страницы.
+
+### 🔍 Основные ошибки в вашем исходном коде:
+1. **Дублирование тегов**: У вас несколько раз встречаются открывающие и закрывающие теги `<head>` и `<body>`. В одном HTML-документе они должны быть **строго по одному разу**.
+2. **Вложенный документ**: Внутри записи от "12 мая" вы случайно вставили целый новый HTML-документ (с собственными `<meta>`, `<title>`, `<style>`, `<head>` и `<body>`). Это полностью разрушает структуру.
+3. **Контент внутри `<head>`**: Теги `<h2>` и `<a>` от 21 мая находятся внутри секции `<head>`, хотя любой видимый контент должен быть внутри `<body>`.
+4. **Незакрытый тег**: В строке `Задание 3</p` пропущена закрывающая угловая скобка `>`.
+
+---
+
+### ✅ Исправленный и полностью рабочий код
+
+Я почистил ваш код: объединил все стили в одном месте, убрал дублирующиеся теги `<head>` и `<body>`, и поместил весь контент внутрь одной правильной структуры. Также я добавил обертку `<div class="container">`, чтобы ваши стили для карточек (`.card`) применялись корректно.
+
+Полностью замените содержимое вашего файла на этот код:
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />  
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 40px;
         }
         .card {
             background: white;
@@ -67,7 +302,13 @@
 <body>
 
 <div class="container">
-    <h1>📝 Ключи к тесту</h1>
+    <h1>📝 Мой блог</h1>
+
+    <h2>21 мая, 2026</h2>
+    <p><a href="таблица 4.ods">таблица 4</a></p>
+
+    <h2>12 мая, 2026</h2>
+    <h3 style="text-align: center; color: #333;">Ключи к тесту</h3>
 
     <!-- Карточка 1 -->
     <div class="card">
@@ -102,100 +343,47 @@
         </div>
     </div>
 
-</div>
+    <h2>5 мая, 2026</h2>
+    <p><a href="таблица 3">таблица 3</a></p>
 
-</body>
-</html>  </p>  
-
+    <h2>27 апреля, 2026</h2>
+    <p><a href="Без имени 2.ods">таблица 2</a></p>
  
-<h2> 5 мая , 2026</h2>
- <a href="таблица 3">таблица3</a>
-
+    <h2>22 апреля, 2026</h2>
+    <p><a href="диаграмма.ods">таблица</a></p>
+    
+    <h2>8 апреля, 2026</h2>
+    <p><a href="pac.png">проект база данных</a></p>
  
-<h2> 27 апреля , 2026</h2>
- <a href="Без имени 2.ods">таблица2</a>
+    <h2>1 апреля, 2026</h2>
+    <p>Итоговые результаты (с новым признаком)</p>  
+    <p>Ошибка на обучении (MSE): 2.2188169496371986</p>  
+    <p>Ошибка на тесте (MSE): 2.1615495043812962</p>  
  
- <h2> 22 апреля , 2026</h2>
- <a href="диаграмма.ods">таблица</a>
-<h2> 8 апреля , 2026</h2>
-<a href="pac.png">проект база данных</a>
- 
-<h2> 1 апреля , 2026</h2>
-<p>Итоговые результаты (с новым признаком)</p>  
-<p>Ошибка на обучении (MSE): 2.2188169496371986</p>  
-<p>Ошибка на тесте (MSE): 2.1615495043812962</p>  
- 
-<h2> 21 марта , 2026</h2>
-<p>Сегедня загрузила датасет.Показатель точности равен 69%</p>  
- <p>Сегодня я также узнала,как сгенерировать датасет на основе входных данных – возраст, стаж вождения, число ДТП – с целью принятия решения о возможности заключения страхования КАСКО</p> 
-  <p>Вот мой клиент:возраст= 25;стаж=5;ДТП=0.Точность решения составляет 85,50%</p>
-  <h2> 16 марта , 2026</h2>
-<p>Студент занимался 5 часов</p>
-<p>Прогноз баллов: 76.40</p>
+    <h2>21 марта, 2026</h2>
+    <p>Сегодня загрузила датасет. Показатель точности равен 69%</p>  
+    <p>Сегодня я также узнала, как сгенерировать датасет на основе входных данных – возраст, стаж вождения, число ДТП – с целью принятия решения о возможности заключения страхования КАСКО</p> 
+    <p>Вот мой клиент: возраст= 25; стаж=5; ДТП=0. Точность решения составляет 85,50%</p>
+    
+    <h2>16 марта, 2026</h2>
+    <p>Студент занимался 5 часов</p>
+    <p>Прогноз баллов: 76.40</p>
 
-  
-  </head>
-  <body> 
-<h2> 25 февраля , 2026</h2>
-<p>Ответ бот-FAQ: Наш стандартный срок доставки — 3–5 рабочих дней.</p>
-<p>Ответ бот-FAQ: Заказ можно оплатить по карте.</p>
+    <h2>25 февраля, 2026</h2>
+    <p>Ответ бот-FAQ: Наш стандартный срок доставки — 3–5 рабочих дней.</p>
+    <p>Ответ бот-FAQ: Заказ можно оплатить по карте.</p>
 
+    <h2>18 февраля, 2026</h2>
+    <p>Persian cat: 43.18%</p>
+    <p>tabby cat: 21.81%</p>
+    <p>Egyptian Mau: 13.68%</p>
 
-
-    
-    
-    
-<h2> 18 февраля , 2026</h2>
-    
-<p>Persian cat: 43.18%</p>
-<p>tabby cat: 21.81%</p>
-<p>Egyptian Mau: 13.68%</p>
-
-    
- <h2> 20 января , 2026</h2>
-  <p class="quote"> n=p⋅q=5⋅7=35</p>
-<p>ϕ(n)=(p−1)(q−1)=(5−1)(7−1)=4⋅6=24</p>
-   <p>gcd(5,24)=1 → ✅ подходит!</p>
-<p>e⋅d≡1(modϕ(n))⇒5d≡1(mod24)</p>
-<p>5⋅5=25≡1mod24 ✅</p>
-<p>Открытый ключ: (e,n)=(5,35)</p>
-<p>Закрытый ключ: (d,n)=(5,35)</p>
- <p>Pеальное значение n:18934572093847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293</p>
-   <h2> 19 января , 2026</h2>
-    <p> Задание 1</p>
-     <p>   а.АПЕЛЬСИН-САЦЬНВЩЮ,k17</p>
-     <p>   б.АБРИКОС-ЫЬЛГЕЙМ,k27</p>
-    <p> Задание 2</p>
-      <p>  а.ФХНЧКЗ-ПРИВЕТ,k5</p>
-      <p>  б.ЦЩЕБФ-ВЕСНА,k20</p>
-    <p> Задание 3</p
-       <p>  БЫЧКОВА-КЕБФШЛЙ</p>
-    <blockquote class="q">Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
-    <h2> 14 января , 2025</h2>
-<a href="mailto:mari.bychkova.10@internet.ru">напишите мне</a>
-
-    <p>доменное имя моего сайта-maria23-10.github.io . </p>
-    
-    <h2> 20 декабря , 2025</h2>
-  
-    <p>Поздравление с Рождеством читайте <a href="kolyadka2.odt"> здесь.</a></p>
-    <video width="600" height="360" controls>
-      <source src="newTree.mp4" type="video/mp4">
-      Ваш браузер не поддерживает видео.
-    </video>
-    
-    <h2> 01 декабря , 2025</h2>
-<img src="IconIcons/gingerbread-man.png" alt="Новый год">
-Поздравление с Наступающим 2026 годом читайте <a href="Congratulations2026.html"> здесь.</a>
-<h2> 15 октября , 2025</h2>
-<p>Я сделала Новогодние кроссворды для сайта 
- <a href=“http://evelina09-16.github.io/dem.gihub.io/”  title=“Блог моего друга”>Сайт моего друга</a>
-</p>
-<h2> 1 сентября , 2025</h2>
-<blockquote class="q" >  Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
-<p>
-Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.
-</p>
-<p><a href="https://www.flaticon.com/ru/free-icons/" title="рождество иконки">Рождество иконки от Pixelmeetup - Flaticon</a></p>
- </body>
- </html>
+    <h2>20 января, 2026</h2>
+    <p class="quote">n = p⋅q = 5⋅7 = 35</p>
+    <p>ϕ(n) = (p−1)(q−1) = (5−1)(7−1) = 4⋅6 = 24</p>
+    <p>gcd(5,24) = 1 → ✅ подходит!</p>
+    <p>e⋅d ≡ 1 (mod ϕ(n)) ⇒ 5d ≡ 1 (mod 24)</p>
+    <p>5⋅5 = 25 ≡ 1 mod 24 ✅</p>
+    <p>Открытый ключ: (e,n) = (5,35)</p>
+    <p>Закрытый ключ: (d,n) = (5,35)</p>
+    <p>Реальное значение n: 18934572093847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293847562938475629384756293......
